@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kalyanam Jahnavi – Product & Project Manager</title>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f5f6f9;--surface:#fff;--ink:#14203a;--mute:#556278;--line:#dce1ea;--navy:#0c1f3f;--navy2:#17356b;--accent:#1f4fb4;--gold:#b88a2a;--soft:#e9eef8;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0a111d;--surface:#131c2b;--ink:#ecf0f7;--mute:#9aa8bd;--line:#26324a;--accent:#8fb0f5;--gold:#dcb65e;--soft:#1a2740}}
+:root[data-theme="dark"]{--bg:#0a111d;--surface:#131c2b;--ink:#ecf0f7;--mute:#9aa8bd;--line:#26324a;--accent:#8fb0f5;--gold:#dcb65e;--soft:#1a2740}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 70px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.65 "Source Sans 3",system-ui,-apple-system,"Segoe UI",sans-serif}
+h1,h2,h3{font-family:"Libre Baskerville",Georgia,"Times New Roman",serif;line-height:1.25;margin:0;color:var(--ink)}
+a{color:var(--accent)}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 1.25rem}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--surface) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;gap:1rem;padding-top:.7rem;padding-bottom:.7rem}
+.brand{font:700 1.05rem "Libre Baskerville",Georgia,serif;color:var(--ink);text-decoration:none;margin-right:auto;white-space:nowrap}
+nav{display:flex;gap:.2rem;overflow-x:auto}
+nav a{padding:.4rem .75rem;border-radius:6px;text-decoration:none;color:var(--mute);font-weight:600;font-size:.96rem;white-space:nowrap}
+nav a:hover{color:var(--ink)}nav a.on{color:var(--accent);background:var(--soft)}
+#theme{border:1px solid var(--line);background:none;color:var(--ink);border-radius:6px;padding:.35rem .6rem;cursor:pointer;font:inherit;font-size:.9rem}
+.hero{background:radial-gradient(900px 400px at 85% 10%,rgba(184,138,42,.28),transparent 60%),radial-gradient(700px 500px at 0% 100%,rgba(70,120,230,.35),transparent 60%),linear-gradient(160deg,var(--navy),var(--navy2));color:#fff;padding:5rem 0 5.5rem}
+.hero .wrap{display:grid;gap:2.5rem;align-items:center}
+@media(min-width:900px){.hero .wrap{grid-template-columns:1.4fr 1fr}}
+.hero h1{color:#fff;font-size:clamp(2.2rem,6vw,3.6rem)}
+.role-line{color:#e4c273;font-weight:600;margin:0 0 .9rem}
+.hero p.lead{font-size:1.2rem;max-width:36rem;margin:1.3rem 0 0;color:#dbe4f5}
+.btns{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.8rem}
+.btn{display:inline-block;padding:.75rem 1.35rem;border-radius:8px;font:600 1rem "Source Sans 3",sans-serif;text-decoration:none;border:1.5px solid rgba(255,255,255,.55);cursor:pointer;background:none;color:#fff}
+.btn.gold{background:#e4c273;border-color:#e4c273;color:#14203a}
+.glass{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);border-radius:14px;padding:1.4rem}
+.glass h3{color:#fff;font-size:1rem;margin-bottom:.6rem}
+.glass .row{display:flex;justify-content:space-between;gap:1rem;padding:.55rem 0;border-top:1px solid rgba(255,255,255,.15);color:#dbe4f5}
+.glass .row b{color:#fff;text-align:right}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:1rem;margin-top:-2.6rem;position:relative;z-index:2}
+.stat{background:var(--surface);border:1px solid var(--line);border-top:3px solid var(--gold);border-radius:10px;padding:1.2rem;box-shadow:0 10px 30px rgba(12,31,63,.12)}
+.stat b{display:block;font:700 2.1rem "Libre Baskerville",Georgia,serif;color:var(--accent)}
+.stat span{color:var(--mute);font-size:.95rem}
+section{padding:4.5rem 0}
+section.alt{background:var(--surface);border-block:1px solid var(--line)}
+.kicker{color:var(--gold);font-weight:700;margin:0 0 .4rem}
+h2{font-size:clamp(1.7rem,4.5vw,2.3rem)}
+.sub{color:var(--mute);max-width:46rem;margin:.6rem 0 2.2rem}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:1.5rem}
+.alt .card{background:var(--bg)}
+.two{display:grid;gap:1.25rem}.three{display:grid;gap:1.25rem}
+@media(min-width:820px){.two{grid-template-columns:1fr 1fr}.three{grid-template-columns:repeat(3,1fr)}}
+.card h3{font-size:1.1rem;margin-bottom:.5rem}.card p{margin:.4rem 0}
+ul{padding-left:1.15rem;margin:.5rem 0 0}li{margin-bottom:.55rem}
+.tabs{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:1rem}
+.tab,.chip{border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:.45rem 1rem;border-radius:999px;cursor:pointer;font:600 .95rem "Source Sans 3",sans-serif}
+.tab[aria-selected="true"],.chip[aria-pressed="true"]{background:var(--navy2);border-color:var(--navy2);color:#fff}
+.did li b{color:var(--navy2)}
+:root[data-theme="dark"] .did li b{color:var(--accent)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .did li b{color:var(--accent)}}
+.feat{display:grid;gap:1.25rem}
+@media(min-width:820px){.feat{grid-template-columns:1fr 1.2fr}}
+.pill{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:.1rem .7rem;font-size:.9rem;color:var(--mute);margin:.2rem .2rem 0 0}
+.xp{display:grid;gap:1.25rem}
+@media(min-width:820px){.xp{grid-template-columns:270px 1fr}}
+.jobs{display:flex;gap:.5rem;overflow-x:auto}
+@media(min-width:820px){.jobs{flex-direction:column}}
+.job{text-align:left;background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--line);border-radius:8px;padding:.8rem 1rem;cursor:pointer;color:var(--ink);font:inherit;min-width:210px}
+.job small{display:block;color:var(--mute)}
+.job[aria-selected="true"]{border-left-color:var(--gold);background:var(--soft)}
+.when{color:var(--mute);margin:0 0 .8rem}
+.badge{display:inline-block;background:var(--soft);color:var(--accent);border-radius:999px;padding:.15rem .7rem;font-size:.85rem;font-weight:700;margin-bottom:.7rem}
+.tags{display:flex;flex-wrap:wrap;gap:.4rem;margin:.9rem 0;padding:0;list-style:none}
+.tags li{border:1px solid var(--line);border-radius:6px;padding:.1rem .6rem;font-size:.9rem;margin:0;color:var(--mute)}
+.skillgrid{display:flex;flex-wrap:wrap;gap:.6rem}
+.sk{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:.45rem .85rem}
+.sk[hidden]{display:none}
+.hl{color:var(--accent);font-weight:600;text-decoration:none;font-size:.95rem;white-space:nowrap}
+@media(max-width:760px){.hl{display:none}}
+#skills.three{display:block}
+#skills .skc{background:none;border:0;border-top:1px solid var(--line);border-radius:0;padding:1.6rem 0;display:grid;gap:.3rem 2.5rem;align-items:start}
+#skills .skc:last-child{border-bottom:1px solid var(--line)}
+#skills .skc h3{font-size:1.2rem;margin:0;padding-left:.8rem;border-left:3px solid var(--gold)}
+#skills .skc p.d{margin:0;padding-left:.8rem}
+@media(min-width:820px){#skills .skc{grid-template-columns:270px 1fr}#skills .skc h3,#skills .skc p.d{grid-column:1}#skills .skc .pl{grid-column:2;grid-row:1 / span 2}}
+.skc p.d{color:var(--mute);margin:.2rem 0 1rem}
+.skc .pl{display:flex;flex-wrap:wrap;gap:.5rem}
+.skc .pl span{background:var(--soft);color:var(--ink);border:1px solid var(--line);border-radius:999px;padding:.35rem .9rem;font-size:.96rem;font-weight:600}
+.chips{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.4rem}
+form{display:grid;gap:1rem}
+label{display:grid;gap:.3rem;font-weight:600}
+input,textarea,select{font:inherit;padding:.65rem .8rem;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink)}
+textarea{min-height:130px;resize:vertical}
+form .btn{background:#e4c273;border-color:#e4c273;color:#14203a}
+footer{border-top:1px solid var(--line);padding:1.5rem 0;color:var(--mute);font-size:.95rem}
+.rv{opacity:0;transform:translateY(14px);transition:opacity .6s,transform .6s}.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+
+.skpanel{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.sg{background:var(--surface);padding:1.5rem}
+.sg h3{font-size:1.05rem;margin:0 0 1rem;display:flex;align-items:center;gap:.6rem}
+.sg h3 i{width:.8rem;height:.8rem;border-radius:50%;display:inline-block;flex:none}
+.sg .pl{display:flex;flex-wrap:wrap;gap:.5rem}
+.sg .pl span{border:1px solid var(--line);background:var(--bg);border-radius:999px;padding:.3rem .85rem;font-size:.95rem;font-weight:600}
+.edu h4{font:700 1.1rem "Libre Baskerville",Georgia,serif;margin:0 0 1.1rem;color:var(--ink)}
+.ei{border-left:3px solid var(--gold);padding:.15rem 0 .15rem .9rem;margin-bottom:1rem}
+.ei b{display:block}.ei span,.ei em{display:block;color:var(--mute);font-style:normal;font-size:.96rem}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<a class="brand" href="#top">Kalyanam Jahnavi</a>
+<nav aria-label="Sections"><a href="#about">About</a><a href="#work">What I do</a><a href="#featured">Featured work</a><a href="#experience">Experience</a><a href="#academic">Academic</a><a href="#skills">Skills</a></nav>
+<a class="hl" href="mailto:kjahnavi024@gmail.com">Email</a><a class="hl" href="https://linkedin.com/in/jahnavi-k24/" rel="noopener">LinkedIn</a><button id="theme" aria-label="Toggle light or dark theme">Theme</button>
+</div></header>
+
+<div class="hero" id="top"><div class="wrap">
+<div>
+<p class="role-line">Product & Project Manager · AI/ML Products</p>
+<h1>Kalyanam Jahnavi</h1>
+<p class="lead">I turn AI ideas into software people actually use. I lead cross-functional teams, own the roadmap and keep delivery, quality and stakeholders moving in the same direction.</p>
+<div class="btns"><a class="btn gold" href="mailto:kjahnavi024@gmail.com">kjahnavi024@gmail.com</a><a class="btn" href="https://linkedin.com/in/jahnavi-k24/" rel="noopener">LinkedIn profile</a></div>
+</div>
+<aside class="glass"><h3>Snapshot</h3>
+<div class="row"><span>Now</span><b>Associate Project Manager, Techolution</b></div>
+<div class="row"><span>Experience</span><b>3 years</b></div>
+<div class="row"><span>Focus</span><b>AI/ML product delivery</b></div>
+<div class="row"><span>Background</span><b>B.Tech, Computer Science</b></div>
+</aside>
+</div></div>
+
+<div class="wrap"><div class="stats" aria-label="Key results">
+<div class="stat"><b data-n="27">0</b><span>people in the cross-functional team I lead</span></div>
+<div class="stat"><b data-n="20" data-s="+">0</b><span>production releases I delivered</span></div>
+<div class="stat"><b data-n="2">0</b><span>junior PMs I mentored</span></div>
+<div class="stat"><b data-n="342">0</b><span>active users in the product I led, grown from 10–12<em style="display:block;margin-top:.4rem;font-size:.88rem;font-style:normal">An internal accelerator, so this is organization-wide adoption.</em></span></div>
+</div></div>
+
+<section id="about"><div class="wrap rv">
+<p class="kicker">About</p><h2>Technical enough to build with engineers, clear enough to brief executives</h2>
+<p class="sub">I’m a product management professional with a Computer Science Engineering degree. I started in software engineering, moved into product, and now own delivery of an enterprise AI platform. I like the full loop: understand the problem, write the requirements, ship, then learn from users.</p>
+<div class="three">
+<div class="card"><h3>Ownership</h3><p>I take products from idea to production and stay with them through adoption and improvement.</p></div>
+<div class="card"><h3>Cross-functional leadership</h3><p>I keep Full Stack, AI, QA, UX and Engineering aligned on scope, dependencies and release readiness.</p></div>
+<div class="card"><h3>User and data focus</h3><p>I use feedback, adoption analysis and friction points to decide what to improve next.</p></div>
+</div></div></section>
+
+<section class="alt" id="work"><div class="wrap rv">
+<p class="kicker">What I do</p><h2>What I’ve done, by area</h2>
+<p class="sub">Select an area to see the work I’ve owned.</p>
+<div class="tabs" role="tablist" aria-label="Areas" id="wtabs"></div>
+<div class="card did" id="wpanel" role="tabpanel" aria-live="polite"></div>
+</div></section>
+
+<section id="featured"><div class="wrap rv">
+<p class="kicker">Featured work</p><h2>eCG AI</h2>
+<p class="sub">The main product I work on at Techolution.</p>
+<div class="feat">
+<div class="card"><h3>The product</h3><p>An enterprise AI development platform that helps engineering teams move from understanding a requirement to implementing and reviewing code with less manual effort.</p><p>It is an internal accelerator used across the organization. My team built it. I lead the product.</p>
+<span class="pill">VS Code extension</span><span class="pill">Web prompt workspace</span><span class="pill">AI-assisted development</span></div>
+<div class="card did"><h3>My contribution</h3><ul>
+<li><b>Owned the product end to end,</b> from ideation through releases, deployment, adoption and continuous improvement.</li>
+<li><b>Led a 27-member team</b> across Full Stack, AI, QA, UX and Engineering.</li>
+<li><b>Delivered 20+ production releases</b> and grew active users from about 10–12 to 342.</li>
+<li><b>Helped the product complete 23k+ tasks,</b> saving about 2,491 developer hours, and gathered 1,156 pieces of user feedback to guide improvements.</li>
+</ul></div>
+</div></div></section>
+
+<section class="alt" id="experience"><div class="wrap rv">
+<p class="kicker">Experience</p><h2>Career so far</h2>
+<p class="sub">Select a role to see what I owned and delivered.</p>
+<div class="xp"><div class="jobs" role="tablist" aria-label="Roles" id="jobs"></div><div class="card" id="jpanel" role="tabpanel" aria-live="polite"></div></div>
+</div></section>
+
+<section id="academic"><div class="wrap rv">
+<p class="kicker">Academic projects</p><h2>Where I started</h2>
+<p class="sub">Two projects from my B.Tech, an early step into AI that helps me work closely with engineering and data teams today.</p>
+<div class="two">
+<article class="card"><span class="badge">College project · Computer vision</span><h3>Voice-activated face recognition attendance</h3>
+<p>A Python system that recognizes people through a webcam, greets them by voice and records attendance in a CSV file.</p>
+<ul class="tags"><li>Python</li><li>OpenCV</li><li>face_recognition</li><li>NumPy</li><li>pyttsx3</li></ul>
+<a href="https://github.com/kJahnavi24/Voice-_Activated_Face_recognition" rel="noopener">View on GitHub</a></article>
+<article class="card"><span class="badge">College project · NLP research</span><h3>Sequential pattern rules for aspect extraction</h3>
+<p>Research on aspect-based sentiment analysis: new pattern-based rules to find which product features customers discuss in reviews, going beyond nouns to include other words such as verbs.</p>
+<ul class="tags"><li>Python</li><li>NLP</li><li>Sentiment analysis</li></ul>
+<a href="https://github.com/kJahnavi24/New-Sequential-pattern-based-rules-for-Aspect-Extraction" rel="noopener">View on GitHub</a></article>
+</div></div></section>
+
+<section class="alt" id="skills"><div class="wrap rv">
+<p class="kicker">Skills</p><h2>Toolkit</h2>
+<p class="sub">What I use to discover, deliver and grow products, grouped by purpose.</p>
+<div class="skpanel" id="skills"></div>
+<h3 style="margin:3.5rem 0 1.2rem">Education and certifications</h3>
+<div class="two">
+<div class="card edu"><h4>Education</h4>
+<div class="ei"><b>B.Tech, Computer Science Engineering</b><span>ICFAI University, Hyderabad</span><em>CGPA 8.36</em></div>
+<div class="ei"><b>Intermediate</b><span>VelodITy Junior College, Telangana</span><em>State 4th rank, 98.6%</em></div></div>
+<div class="card edu"><h4>Certifications</h4>
+<div class="ei"><b>Professional Diploma in Agile and Project Management</b><span>Udemy</span></div>
+<div class="ei"><b>Ultimate Product Management Course</b><span>Udemy</span></div>
+<div class="ei"><b>Agile Methodology Virtual Experience</b><span>Cognizant</span></div></div>
+</div></div></section>
+
+<footer><div class="wrap">© 2026 Kalyanam Jahnavi</div></footer>
+
+<script>
+const $=id=>document.getElementById(id);
+function tabset(host,items,render,cls){items.forEach((it,i)=>{const b=document.createElement("button");b.className=cls;b.setAttribute("role","tab");b.innerHTML=it.label;
+  b.onclick=()=>{[...host.children].forEach((x,j)=>x.setAttribute("aria-selected",j===i));render(it)};host.appendChild(b)});host.firstChild.click()}
+const W=[
+ {label:"Product strategy",h:["<b>Wrote product requirements</b> for an AI-powered platform that works with repository context and coding standards.","<b>Prioritized features and shaped the roadmap</b> with engineering, AI, QA and UX.","<b>Briefed the CEO and executives</b> on roadmap, adoption metrics, delivery status, risks and release plans.","<b>Ran competitive analysis</b> and prepared PRDs and wireframes earlier in my career at Besaque."]},
+ {label:"Delivery",h:["<b>Managed execution</b> across a 27-member cross-functional team.","<b>Delivered 20+ production releases,</b> coordinating dependencies, scope, timelines and release readiness.","<b>Led issue triage</b> across engineering and QA, prioritizing defects and tracking dependencies to improve reliability.","<b>Led a client-focused project</b> from ideation, working with a team of 7."]},
+ {label:"Adoption and users",h:["<b>Used 1,156 pieces of user feedback</b> and adoption analysis to find friction points and plan improvements.","<b>Grew active users</b> from about 10–12 to 342.","<b>Improved usability metrics by 30%</b> through user testing at Besaque.","<b>Introduced a product to 2 Indian business schools</b> to support partnerships and adoption at SkillBanc."]},
+ {label:"Leadership and process",h:["<b>Established PMO processes</b> for the team.","<b>Mentored 2 junior PMs</b> on the team.","<b>Delivered AWS training</b> for 8 junior team members and supported technical onboarding."]}
+];
+tabset($("wtabs"),W,it=>{$("wpanel").innerHTML="<ul>"+it.h.map(x=>`<li>${x}</li>`).join("")+"</ul>"},"tab");
+const J=[
+ {label:"<b>Techolution</b><small>Associate Project Manager</small><small>Nov 2024 – Present</small>",c:"Techolution",r:"Associate Project Manager",w:"Nov 2024 – Present",p:["Own end-to-end product delivery of eCG AI, an enterprise AI platform.","Manage a 27-member cross-functional team and 20+ production releases.","Scaled adoption to 342 active users, with 23k+ tasks completed and about 2,491 developer hours saved.","Partner with the CEO and executive stakeholders on roadmap and delivery.","Established PMO processes and mentored 2 junior PMs."]},
+ {label:"<b>Besaque Technologies</b><small>Product Management Trainee</small><small>Mar 2023 – Aug 2024</small>",c:"Besaque Technologies",r:"Product Management Trainee",w:"Mar 2023 – Aug 2024",p:["Worked with a cross-functional team of 7 to implement design specifications from Figma prototypes.","Led 1 client-focused project and managed product cycles from ideation.","Improved usability metrics by 30% based on user testing results.","Conducted competitive analysis and prepared PRDs and wireframes."]},
+ {label:"<b>SkillBanc USA</b><small>Software Engineer Intern</small><small>Jan 2023 – Jun 2023</small>",c:"SkillBanc USA",r:"Software Engineer Intern",w:"Jan 2023 – Jun 2023",p:["Delivered AWS training for 8 junior team members and supported technical onboarding.","Worked with stakeholders to introduce SkillBanc to 2 Indian business schools, supporting partnerships and product adoption."]}
+];
+tabset($("jobs"),J,j=>{$("jpanel").innerHTML=`<h3>${j.c}</h3><p style="color:var(--accent);font-weight:600;margin:.2rem 0">${j.r}</p><p class="when">${j.w}</p><ul>${j.p.map(x=>`<li>${x}</li>`).join("")}</ul>`},"job");
+const C=[
+ {t:"Strategy and discovery",c:"#1f4fb4",s:["Product Strategy","Roadmap Planning","Product Discovery","User Research","Product Lifecycle Management"]},
+ {t:"Execution and delivery",c:"#b88a2a",s:["Requirements Gathering","Feature Prioritization","Backlog Management","Release Management","Release Planning","Risk & Dependency Management"]},
+ {t:"Growth and leadership",c:"#0f8f6a",s:["Product Metrics","User Adoption","Stakeholder Management","Cross-functional Leadership"]},
+ {t:"AI and technical",c:"#7a4fd1",s:["AI/ML Products","Agentic AI","Technical Requirements","Agile/Scrum"]},
+ {t:"Project and design tools",c:"#d1503f",s:["Jira","Figma","Miro"]},
+ {t:"Data and analytics",c:"#2a8fb8",s:["Excel","Power BI","Google Analytics","SQL","Python","Pandas"]}
+];
+C.forEach(g=>{const d=document.createElement("div");d.className="sg";d.innerHTML=`<h3><i style="background:${g.c}"></i>${g.t}</h3><div class="pl">${g.s.map(x=>`<span>${x}</span>`).join("")}</div>`;$("skills").appendChild(d)});
+if($("form"))$("form").onsubmit=e=>{e.preventDefault();const n=$("fn").value;location.href="mailto:kjahnavi024@gmail.com?subject="+encodeURIComponent($("fr").value+" – "+n)+"&body="+encodeURIComponent($("fm").value+"\n\n"+n)};
+$("theme").onclick=()=>{const r=document.documentElement,d=r.dataset.theme?r.dataset.theme==="dark":matchMedia("(prefers-color-scheme:dark)").matches;r.dataset.theme=d?"light":"dark"};
+const reduce=matchMedia("(prefers-reduced-motion:reduce)").matches;
+document.querySelectorAll("[data-n]").forEach(el=>{const n=+el.dataset.n,s=el.dataset.s||"";
+  if(reduce){el.textContent=n.toLocaleString()+s;return}
+  const t0=performance.now();(function f(t){const p=Math.min((t-t0)/1400,1);el.textContent=Math.round(n*(1-Math.pow(1-p,3))).toLocaleString()+(p===1?s:"");if(p<1)requestAnimationFrame(f)})(t0)});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.08});
+document.querySelectorAll(".rv").forEach(el=>io.observe(el));
+const links=[...document.querySelectorAll("nav a")];
+const spy=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)links.forEach(a=>a.classList.toggle("on",a.getAttribute("href")==="#"+e.target.id))}),{rootMargin:"-40% 0px -55% 0px"});
+links.forEach(a=>{const s=document.querySelector(a.getAttribute("href"));if(s)spy.observe(s)});
+</script>
+</body>
+</html>
